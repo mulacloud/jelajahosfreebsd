@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# PROVIDE: echo 
+# REQUIRE: networking 
+# KEYWORD: 
+
+
+. /etc/rc.subr
+
+name=echo
+rcvar=echo_enable
+
+pidfile="/var/run/${name}.pid" 
+echo_command="/tmp/server 9000"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f ${echo_command}"
+
+load_rc_config $name
+: ${echo_enable:=no}
+
+run_rc_command "$1"
