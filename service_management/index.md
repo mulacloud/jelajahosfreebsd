@@ -4,7 +4,7 @@
 ## Persiapan
 Silahkan download sebuah source code echo server. server ini akan membuka sebuah port yang bisa kita akses nanti dengan `telnet'
 
-    `fetch -o /tmp/server.cpp https://github.com/mulacloud/jelajahosfreebsd/raw/main/service_management/echo-server.cpp`
+    fetch -o /tmp/server.cpp https://github.com/mulacloud/jelajahosfreebsd/raw/main/service_management/echo-server.cpp
 
 Kompile source code yang sudah didownload sebelumnya
 
